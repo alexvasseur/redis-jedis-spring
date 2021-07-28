@@ -1,0 +1,10 @@
+---
+applications:
+  - name: rsapidemowedn
+    path: target/rsapidemo-1.0.0.jar
+    instances: 1
+    memory: 1G
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }}'
+    services:
+      - extRedis
